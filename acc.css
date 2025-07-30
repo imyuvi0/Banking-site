@@ -4,7 +4,7 @@ body {
   background-color: #f5f7fa;
   color: #333;
 }
-  
+
 nav a {
   color: white;
   margin-left: 20px;
@@ -12,11 +12,11 @@ nav a {
   font-weight: 500;
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
   font-size: 18px;
@@ -27,6 +27,7 @@ header {
   color: white;
   padding: 1rem 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -36,19 +37,19 @@ header {
   font-weight: bold;
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 30%;
-  height: 60rem;
-  margin-left: 35%;
-  margin-right: 45%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  width: 35%;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 5% auto;
   box-shadow: 0px 0px 10px 1px;
   border-radius: 2%;
+  padding: 20px;
+  background-color: white;
 }
 
 footer {
@@ -56,41 +57,43 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
-  margin-top: 135px;
+  margin-top: 50px;
 }
 
-.fill{
+.fill {
   width: 100%;
   height: 2rem;
   font-size: 15px;
 }
 
-#acc{
+#acc {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: rgb(8, 176, 222);
   padding: 20px;
   border-radius: 1rem;
   color: white;
   width: 90%;
-  height: 1rem;
   box-shadow: 0px 0px 20px 0.5px black;
+  margin-bottom: 20px;
 }
 
-.YN{
+.YN {
   display: flex;
-  justify-content: flex-start;
   justify-content: space-evenly;
   font-weight: bold;
+  width: 100%;
 }
 
-.f{
+.f {
   display: flex;
   flex-direction: column;
   margin-top: 2%;
+  width: 100%;
 }
 
-.submit{
+.submit {
   height: 2.5rem;
   margin-top: 25px;
   background-color: rgb(8, 176, 222);
@@ -103,18 +106,52 @@ footer {
   border: 0px;
 }
 
-.heading{
+.heading {
   font-size: 23px;
   font-weight: bolder;
 }
 
-.submit:hover{
+.submit:hover {
   transform: scale(1.05);
   transition: 0.5s ease;
 }
+
 .hero {
   background-color: rgb(13, 175, 219);
   color: white;
   padding: 4rem 2rem;
   text-align: center;
+}
+
+/* ---------- Responsive for Mobile ----------- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .form {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  #acc {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .submit {
+    font-size: 1rem;
+  }
 }
