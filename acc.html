@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create an Account</title>
+  <link rel="stylesheet" href="acc.css">
+</head>
+<body>
+  <header>
+    <div class="logo">State Bank of Punjab</div>
+    <nav class="heading-btn">
+      <a href="index.html">Home</a>
+      <a href="#">Accounts</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+      <a href="#">Login</a>
+      <a href="#">Sign Up</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Fill the details to Open your account</h1>
+    <p>Your trusted partner in smart and secure banking.</p>
+  </section>
+  
+  <div class="form">
+    <form class="f">
+      <h1 id="acc">Create an account</h1>
+      <label for="name" class="heading">Full Name</label><br>
+      <input id="name" type="text" placeholder="Enter your name" class="fill">
+      <br><br>
+      <label for="Fname" class="heading">Father Name</label><br>
+      <input id="Fname" type="text" placeholder="Enter Father name" class="fill">
+      <br><br>
+      <label for="Mname" class="heading">Mother name</label><br>
+      <input id="Mname" type="text" placeholder="Enter your name" class="fill">
+      <br><br>
+      <label for="dob" class="heading">DOB</label><br>
+      <input id="dob" type="date" class="fill">
+      
+      <br><br>
+      <label for="aadhar" class="heading">Aadhar card number</label><br>
+      <input id="aadhar" type="text" placeholder="Enter aadhar card number" class="fill">
+      <br><br>
+      <label for="name" class="heading">Want to add a nominee?</label><br>
+
+      <div class="YN">
+  <div>
+    <input type="radio" id="yes" name="answer" class="Y">
+    <label for="yes">Yes</label>
+  </div>
+  <div>
+    <input type="radio" id="no" name="answer" class="N">
+    <label for="no">No</label>
+  </div>
+</div>
+      <button type="button" class="submit" id="btn">
+        Apply
+      </button>
+    </form>
+  </div>
+
+
+  <footer>
+    &copy; 2025 State Bank of Punjab. All rights reserved.
+  </footer>
+
+  <script src="acc.js"></script>
+</body>
+</html>
